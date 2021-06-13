@@ -20,7 +20,7 @@ export class FeedService {
         return from(this.feedPostRepository.find());
     }
 
-    // updatePost(id:number,postFeed: FeedPost): Observable<UpdateResult>{
-    //     return from(this.feedPostRepository.update(id,postFeed))
-    // }
+    updatePost(id:number,postFeed: FeedPost): Observable<UpdateResult>{
+        return from(this.feedPostRepository.update(id,postFeed))
+    }
 }

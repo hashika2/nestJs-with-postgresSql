@@ -19,11 +19,11 @@ export class FeadController {
         return this.feedService.findAllPosts();
     }
 
-//     @Put(':id')
-//     update(
-//         @Param('id') id: number,
-//         @Body() postFeed: FeedPost
-//     ): Observable<UpdateResult>{
-//         return this.feedService.updatePost(id,postFeed)
-//     }
-// }
+    @Put(':id')
+    update(
+        @Param('id') id: number,
+        @Body() postFeed: FeedPost
+    ): Observable<UpdateResult>{
+        return this.feedService.updatePost(id,postFeed)
+    }
+}
