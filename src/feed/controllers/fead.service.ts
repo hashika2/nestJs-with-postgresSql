@@ -6,7 +6,7 @@ import { FeedPostEntity } from '../model/post.entity';
 import { FeedPost } from '../model/post.interface';
 
 @Injectable()
-export class FeedService {
+export class FeedService {   
     constructor(
         @InjectRepository(FeedPostEntity)
         private readonly feedPostRepository: Repository<FeedPostEntity>
